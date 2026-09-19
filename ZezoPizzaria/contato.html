@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | ZezoPizzaria</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVEGAÇÃO ===== -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Zezo<span>Pizzaria</span></a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+      </ul>
+
+      <a href="cardapio.html" class="btn btn-primary">Peça Agora</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== CABEÇALHO DA PÁGINA ===== -->
+  <section class="page-header">
+    <p class="hero-tag">ESTAMOS TE ESPERANDO</p>
+    <h1>Fale <span class="highlight">Conosco</span></h1>
+    <p class="page-header-text">Dúvidas, sugestões ou quer fazer uma reserva? É só chamar.</p>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="contact-section">
+
+    <!-- Informações -->
+    <div class="contact-info reveal">
+      <h2>Informações de Contato</h2>
+
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <div>
+          <h3>Endereço</h3>
+          <p>Rua das Oliveiras, 123 — Centro<br>Rio das Ostras, RJ</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <span class="contact-icon">📞</span>
+        <div>
+          <h3>Telefone / WhatsApp</h3>
+          <p>(22) 99999-0000</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <span class="contact-icon">🕒</span>
+        <div>
+          <h3>Horário de Funcionamento</h3>
+          <p>Terça a Domingo — 18h às 23h</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <span class="contact-icon">✉️</span>
+        <div>
+          <h3>E-mail</h3>
+          <p>contato@zezopizzaria.com.br</p>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps?q=Rio%20das%20Ostras%2C%20RJ&output=embed"
+          width="100%" height="260" style="border:0;" allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Formulário -->
+    <div class="contact-form reveal">
+      <h2>Envie uma Mensagem</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone">
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        <p class="form-feedback" id="form-feedback"></p>
+      </form>
+    </div>
+
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria | ZezoPizzaria</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVEGAÇÃO ===== -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Zezo<span>Pizzaria</span></a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="galeria.html" class="active">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <a href="cardapio.html" class="btn btn-primary">Peça Agora</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== CABEÇALHO DA PÁGINA ===== -->
+  <section class="page-header">
+    <p class="hero-tag">UM GOSTINHO DO QUE TE ESPERA</p>
+    <h1>Nossa <span class="highlight">Galeria</span></h1>
+    <p class="page-header-text">Clique em qualquer foto para ver em tamanho maior.</p>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section class="gallery-grid">
+    <div class="gallery-item reveal">
+      <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=600&q=80" alt="Pizza artesanal ZezoPizzaria">
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza Margherita">
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=600&q=80" alt="Forno a lenha">
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=600&q=80" alt="Pizza Calabresa">
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.unsplash.com/photo-1600628421066-f6bda6a7b976?w=600&q=80" alt="Pizza Trufada">
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=600&q=80" alt="Pizza Quatro Queijos">
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.unsplash.com/photo-1548365328-9f547fb0953b?w=600&q=80" alt="Pizza Camarão">
+    </div>
+    <div class="gallery-item reveal">
+      <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=600&q=80" alt="Pizza Portuguesa">
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX (visualizador de foto ampliada) ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Fechar">&times;</button>
+    <img src="" alt="" id="lightbox-img">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

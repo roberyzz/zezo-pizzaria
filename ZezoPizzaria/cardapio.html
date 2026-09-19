@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio | ZezoPizzaria</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVEGAÇÃO ===== -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Zezo<span>Pizzaria</span></a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cardapio.html" class="active">Cardápio</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <a href="#pedido" class="btn btn-primary">Peça Agora</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== CABEÇALHO DA PÁGINA ===== -->
+  <section class="page-header">
+    <p class="hero-tag">O QUE VAMOS COMER HOJE?</p>
+    <h1>Nosso <span class="highlight">Cardápio</span></h1>
+    <p class="page-header-text">Cada pizza feita na hora, com massa artesanal e ingredientes selecionados.</p>
+  </section>
+
+  <!-- ===== FILTRO DE CATEGORIAS ===== -->
+  <section class="menu-filters">
+    <button class="filter-btn active" data-filter="tradicionais">Tradicionais</button>
+    <button class="filter-btn" data-filter="especiais">Especiais</button>
+    <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+  </section>
+
+  <!-- ===== GRADE DO CARDÁPIO ===== -->
+  <section class="menu-grid" id="menu-grid">
+
+    <!-- Tradicionais -->
+    <div class="menu-card" data-category="tradicionais">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Pizza Margherita">
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Margherita</h3>
+          <span class="price">R$ 42</span>
+        </div>
+        <p>Molho de tomate, mussarela, manjericão fresco e azeite.</p>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="tradicionais">
+      <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=500&q=80" alt="Pizza Calabresa">
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Calabresa</h3>
+          <span class="price">R$ 45</span>
+        </div>
+        <p>Calabresa fatiada, cebola roxa e mussarela.</p>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="tradicionais">
+      <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80" alt="Pizza Quatro Queijos">
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Quatro Queijos</h3>
+          <span class="price">R$ 48</span>
+        </div>
+        <p>Mussarela, provolone, parmesão e gorgonzola.</p>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="tradicionais">
+      <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=500&q=80" alt="Pizza Portuguesa">
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Portuguesa</h3>
+          <span class="price">R$ 46</span>
+        </div>
+        <p>Presunto, ovos, cebola, azeitona e ervilha.</p>
+      </div>
+    </div>
+
+    <!-- Especiais -->
+    <div class="menu-card" data-category="especiais" style="display:none;">
+      <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500&q=80" alt="Pizza Zezo Especial">
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Zezo Especial</h3>
+          <span class="price">R$ 58</span>
+        </div>
+        <p>Costela desfiada, cheddar cremoso e cebola crispy — nossa assinatura.</p>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="especiais" style="display:none;">
+      <img src="https://images.unsplash.com/photo-1600628421066-f6bda6a7b976?w=500&q=80" alt="Pizza Trufada">
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Trufada</h3>
+          <span class="price">R$ 64</span>
+        </div>
+        <p>Funghi, mussarela de búfala e azeite trufado.</p>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="especiais" style="display:none;">
+      <img src="https://images.unsplash.com/photo-1548365328-9f547fb0953b?w=500&q=80" alt="Pizza Camarão">
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Camarão na Moranga</h3>
+          <span class="price">R$ 68</span>
+        </div>
+        <p>Camarões salteados, catupiry e toque de páprica defumada.</p>
+      </div>
+    </div>
+
+    <!-- Bebidas -->
+    <div class="menu-card" data-category="bebidas" style="display:none;">
+      <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80" alt="Refrigerante">
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Refrigerante Lata</h3>
+          <span class="price">R$ 7</span>
+        </div>
+        <p>Coca-Cola, Guaraná ou Fanta — gelado.</p>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="bebidas" style="display:none;">
+      <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=500&q=80" alt="Suco Natural">
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Suco Natural</h3>
+          <span class="price">R$ 10</span>
+        </div>
+        <p>Laranja, limão ou maracujá, feito na hora.</p>
+      </div>
+    </div>
+
+    <div class="menu-card" data-category="bebidas" style="display:none;">
+      <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=500&q=80" alt="Cerveja Artesanal">
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h3>Cerveja Artesanal</h3>
+          <span class="price">R$ 14</span>
+        </div>
+        <p>Long neck gelada — Pilsen ou IPA.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== FORMULÁRIO DE PEDIDO ===== -->
+  <section class="pedido-section reveal" id="pedido">
+    <div class="pedido-box">
+      <h2>Fazer um Pedido</h2>
+      <p class="pedido-subtitle">Preencha os dados abaixo e finalizamos tudo com você.</p>
+
+      <form id="pedido-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="pedido-nome">Nome</label>
+            <input type="text" id="pedido-nome" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="pedido-telefone">Telefone / WhatsApp</label>
+            <input type="tel" id="pedido-telefone" name="telefone" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="pedido-itens">O que você vai pedir?</label>
+          <textarea id="pedido-itens" name="itens" rows="3" placeholder="Ex: 1 Margherita grande, 1 Coca-Cola lata" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Forma de entrega</label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="entrega" value="retirada" checked>
+              Retirar no local
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="entrega" value="entrega">
+              Entrega em casa
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group" id="endereco-group" style="display:none;">
+          <label for="pedido-endereco">Endereço de entrega</label>
+          <input type="text" id="pedido-endereco" name="endereco">
+        </div>
+
+        <div class="form-group">
+          <label for="pedido-obs">Observações (opcional)</label>
+          <textarea id="pedido-obs" name="observacoes" rows="2" placeholder="Ex: sem cebola, ponto da pizza, etc."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+        <p class="form-feedback" id="pedido-feedback"></p>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
